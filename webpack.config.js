@@ -3,13 +3,17 @@ var path = require('path');
 module.exports = {
   entry: './src/index.jsx',
   output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, ''),
-    publicPath: '/',
+    filename: 'dist/index.js',
+    path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'commonjs2'
   },
   externals: {
-    'react': 'commonjs react' 
+    'react': {
+      'commonjs': 'react',
+      'commonjs2': 'react',
+      'amd': 'react',
+      'root': 'React'
+    }
   },
   resolve: {
     alias: {
