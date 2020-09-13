@@ -1,9 +1,10 @@
 var path = require('path');
 
 module.exports = {
-  entry: './src/index.jsx',
+  mode: 'none',
+  entry: './src/index.tsx',
   output: {
-    filename: 'dist/index.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'commonjs2'
   },
@@ -32,6 +33,11 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
+      },
+      {
+          test: /\.tsx?$/,
+          use: 'ts-loader',
+          exclude: '/node_modules/'
       },
       {
         test: /\.css$/i,

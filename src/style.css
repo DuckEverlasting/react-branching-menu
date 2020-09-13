@@ -1,4 +1,5 @@
 .menu-group {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -23,6 +24,12 @@
 .menu-group.large {
   height: 48px;
   font-size: 1.08rem;
+}
+
+.menu-outside-handler {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 
 .menu {
