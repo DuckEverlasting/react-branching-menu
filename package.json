@@ -1,6 +1,6 @@
 {
   "name": "react-branching-menu",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "A set of components to make nested, customizable menus in React.",
   "main": "dist/index.js",
   "scripts": {
@@ -13,6 +13,7 @@
     "branch",
     "nested"
   ],
+  "repository": "https://github.com/DuckEverlasting/react-branching-menu",
   "author": "Matt Klein",
   "license": "MIT",
   "peerDependencies": {
